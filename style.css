@@ -86,7 +86,7 @@ body {
     gap: 30px;
 }
 
-.logo {
+ .logo {
     color: var(--white);
     text-decoration: none;
     font-size: 28px;
@@ -141,7 +141,7 @@ body {
     display: flex;
     align-items: center;
 }
-
+.logo
 .hero-text {
     max-width: 760px;
 }
@@ -646,4 +646,122 @@ img {
     .contact-card {
         padding: 24px;
     }
+}
+/* ==============================
+   WEBSITE FOOTER
+   ============================== */
+
+.site-footer {
+    background: var(--navy);
+    color: var(--white);
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.footer-about p,
+.footer-contact p {
+    color: #D4DCE8;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-grid h3 {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-links a,
+.footer-contact a {
+    display: block;
+    color: #D4DCE8;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #93C5FD;
+}
+
+.footer-contact a {
+    color: #93C5FD;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #D4DCE8;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Responsive Footer */
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-footer {
+        padding-top: 45px;
+    }
+
+    .footer-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+}
+/* Header Logo Image */
+.logo {
+display: flex;
+align-items: center;
+flex-shrink: 0;
+}
+
+.logo img {
+display: block;
+width: 170px;
+height: auto;
+max-height: 60px;
+object-fit: contain;
+}
+.footer-logo {
+display: inline-flex;
+align-items: center;
+margin: 0 0 16px;
+}
+
+.footer-logo img {
+display: block;
+width: 170px;
+max-width: 100%;
+height: auto;
+max-height: 60px;
+object-fit: contain;
 }
