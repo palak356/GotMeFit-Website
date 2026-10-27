@@ -8,11 +8,15 @@ if (fitnessForm) {
         const height = Number(document.getElementById("height").value);
         const weight = Number(document.getElementById("weight").value);
         const goal = document.getElementById("goal").value;
-
-        if (age < 13 || age > 100 || height <= 0 || weight <= 0) {
-            alert("Please enter valid details.");
-            return;
-        }
+if (
+    age < 13 || age > 100 ||
+    height < 50 || height > 250 ||
+    weight < 10 || weight > 300 ||
+    !goal
+) {
+    alert("Please enter valid details and select a fitness goal.");
+    return;
+}
 
         const result = document.getElementById("assessment-result");
 

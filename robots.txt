@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://palak356.github.io/GotMeFit-Website/sitemap.xml
